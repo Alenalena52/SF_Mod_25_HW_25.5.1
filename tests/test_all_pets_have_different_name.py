@@ -21,8 +21,8 @@ def test_all_pets_have_different_names(go_to_my_pets):
       pets_name.append(split_data_pet[0])
 
    # Перебираем имена и если имя повторяется то прибавляем к счетчику r единицу.
-   # Проверяем, если r = 0 то повторяющихся имен нет.
-   r == 0
+   # Проверяем, если r == 0 то повторяющихся имен нет.
+   r = 0
    for i in range(len(pets_name)):
       if pets_name.count(pets_name[i]) > 1:
          r += 1
