@@ -33,3 +33,4 @@ def test_photo_availability(go_to_my_pets):
    assert number_а_photos >= half
    print(f'количество фото: {number_а_photos}')
    print(f'Половина от числа питомцев: {half}')
+   
