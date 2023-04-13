@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
+
 def test_no_duplicate_pets(go_to_my_pets):
     '''Поверяем что на странице со списком моих питомцев нет повторяющихся питомцев'''
 
