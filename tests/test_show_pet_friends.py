@@ -20,7 +20,9 @@ def test_show_pet_friends():
    assert pytest.driver.current_url == 'https://petfriends.skillfactory.ru/all_pets'
 
    images = pytest.driver.find_elements_by_css_selector('.card-deck .card-img-top')
+   
    names = pytest.driver.find_elements_by_css_selector('.card-deck .card-title')
+   
    descriptions = pytest.driver.find_elements_by_css_selector('.card-deck .card-text')
 
    assert names[0].text != ''
