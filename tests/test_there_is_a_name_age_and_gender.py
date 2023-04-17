@@ -7,6 +7,7 @@ def test_there_is_a_name_age_and_gender(go_to_my_pets):
    '''Поверяем что на странице со списком моих питомцев, у всех питомцев есть имя, возраст и порода'''
 
    element = WebDriverWait(pytest.driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".table.table-hover tbody tr")))
+   
    # Сохраняем в переменную pet_data элементы с данными о питомцах
    pet_data = pytest.driver.find_elements_by_css_selector('.table.table-hover tbody tr')
 
